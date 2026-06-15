@@ -79,6 +79,7 @@ export default {
           heading: ['var(--font-heading)', 'serif'],
           display: ['var(--font-heading)', 'serif'],
           serif: ['var(--font-heading)', 'serif'],
+          script: ['var(--font-script)', 'cursive'], 
         },
       },
     },

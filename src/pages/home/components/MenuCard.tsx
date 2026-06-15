@@ -12,7 +12,7 @@ interface MenuCardProps {
 export default function MenuCard({ item }: MenuCardProps) {
   return (
     <div
-      className="w-[300px] md:w-[340px] rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-1 cursor-pointer"
+            className="w-full md:w-[340px] rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-1 cursor-pointer"
       style={{ backgroundColor: 'oklch(var(--background-50))' }}
     >
       <div className="relative w-full aspect-[4/3] overflow-hidden">
@@ -49,19 +49,31 @@ export default function MenuCard({ item }: MenuCardProps) {
         >
           {item.description}
         </p>
-        <div className="flex items-baseline gap-3">
+        <div className="flex flex-col items-end gap-1">
           <span
-            className="text-xs line-through"
-            style={{ color: 'oklch(var(--foreground-300))', fontFamily: 'var(--font-body)' }}
+            className="text-[10px] tracking-wider px-2 py-0.5 rounded-full"
+            style={{
+              backgroundColor: 'oklch(var(--accent-100))',
+              color: 'oklch(var(--accent-700))',
+              fontFamily: 'var(--font-body)',
+            }}
           >
-            {item.originalPrice}
+            初回限定
           </span>
-          <span
-            className="text-xl md:text-2xl font-semibold"
-            style={{ color: 'oklch(var(--primary-500))', fontFamily: 'var(--font-body)' }}
-          >
-            {item.salePrice}
-          </span>
+          <div className="flex items-baseline gap-3">
+            <span
+              className="text-xs line-through"
+              style={{ color: 'oklch(var(--foreground-300))', fontFamily: 'var(--font-body)' }}
+            >
+              {item.originalPrice}
+            </span>
+            <span
+              className="text-xl md:text-2xl font-semibold"
+              style={{ color: 'oklch(var(--accent-500))', fontFamily: 'var(--font-body)' }}
+            >
+              {item.salePrice}
+            </span>
+          </div>
         </div>
       </div>
     </div>

@@ -21,19 +21,18 @@ export default function MenuSection() {
     <section
       id="menu"
       className="relative w-full py-24 md:py-32 overflow-hidden"
-      style={{ backgroundColor: 'oklch(var(--background-100))' }}
+      style={{ backgroundColor: 'oklch(var(--accent-50))' }}
     >
-      <div ref={ref} className="px-8 md:px-14 lg:px-20">
+      <div ref={ref} className="max-w-6xl mx-auto px-8 md:px-8 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-16">
           <div className={`animate-in ${isVisible ? 'visible' : ''}`}>
             <span
-              className="text-xs tracking-[0.3em]"
-              style={{ color: 'oklch(var(--accent-500))', fontFamily: 'var(--font-body)' }}
+              className="text-3xl md:text-4xl font-script text-accent-500"
             >
-              / Menu
+              Menu
             </span>
             <h2
-              className="text-4xl md:text-5xl lg:text-6xl font-heading font-light mt-4"
+              className="text-4xl md:text-5xl font-heading font-light "
               style={{ color: 'oklch(var(--foreground-950))' }}
             >
               人気メニュー
@@ -49,7 +48,7 @@ export default function MenuSection() {
             <button
               onClick={() => scroll('left')}
               className="w-10 h-10 rounded-full flex items-center justify-center cursor-pointer transition-colors duration-300 hover:bg-foreground-100"
-              style={{ backgroundColor: 'oklch(var(--background-200))', color: 'oklch(var(--foreground-600))' }}
+              style={{ backgroundColor: 'oklch(var(--background-50))', color: 'oklch(var(--accent-500))' }}
               aria-label="左にスクロール"
             >
               <i className="ri-arrow-left-s-line text-lg"></i>
@@ -57,7 +56,7 @@ export default function MenuSection() {
             <button
               onClick={() => scroll('right')}
               className="w-10 h-10 rounded-full flex items-center justify-center cursor-pointer transition-colors duration-300 hover:bg-foreground-100"
-              style={{ backgroundColor: 'oklch(var(--background-200))', color: 'oklch(var(--foreground-600))' }}
+              style={{ backgroundColor: 'oklch(var(--background-50))', color: 'oklch(var(--accent-500))' }}
               aria-label="右にスクロール"
             >
               <i className="ri-arrow-right-s-line text-lg"></i>
@@ -71,27 +70,17 @@ export default function MenuSection() {
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {menuItems.map((item, index) => (
-            <div key={item.id} className="snap-start flex-shrink-0" style={{ animationDelay: `${0.15 * index}s` }}>
+            <div
+              key={item.id}
+              className="snap-start shrink-0 w-[calc(100vw-3.5rem-3rem)] max-w-[300px] md:w-[340px] md:max-w-none"
+              style={{ animationDelay: `${0.15 * index}s` }}
+            >
               <MenuCard item={item} />
             </div>
           ))}
         </div>
       </div>
 
-      <div
-        className={`animate-in animate-in-delay-4 ${isVisible ? 'visible' : ''} text-center mt-12 md:mt-16`}
-      >
-        <span
-          className="inline-block whitespace-nowrap px-6 py-2 rounded-full text-xs tracking-wider"
-          style={{
-            backgroundColor: 'oklch(var(--primary-100))',
-            color: 'oklch(var(--primary-700))',
-            fontFamily: 'var(--font-body)',
-          }}
-        >
-          初回限定
-        </span>
-      </div>
     </section>
   );
 }

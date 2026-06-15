@@ -19,7 +19,7 @@ export default function ReserveCTASection() {
     </div>
 
     {/* 中間: 暗いオーバーレイ（テキスト用） */}
-    <div className="absolute inset-0 z-[1] bg-black/30"></div>
+    <div className="absolute inset-0 z-[1] bg-foreground-500/50"></div>
     
       <div
         ref={ref}
@@ -45,7 +45,7 @@ export default function ReserveCTASection() {
             className="text-sm md:text-base text-white/70 mb-10 md:mb-12 leading-relaxed"
             style={{ fontFamily: 'var(--font-body)' }}
           >
-            初回限定の特別メニューを、今すぐご予約ください
+            ご予約お待ちしております。
           </p>
         </div>
         <div className={`animate-in animate-in-delay-3 ${isVisible ? 'visible' : ''}`}>
@@ -67,13 +67,20 @@ export default function ReserveCTASection() {
               <i className="ri-arrow-right-up-line text-sm"></i>
             </div>
           </a>
+          <p
+            className="text-sm md:text-base text-white/70 mt-12 md:mt-16 leading-relaxed"
+            style={{ fontFamily: 'var(--font-body)' }}
+          >
+            是非こちらもご覧ください。
+          </p>
           <div className="flex items-center justify-center gap-4 mt-8">
+            
             <a
               href="https://www.instagram.com/grande_nature_tokyo/"
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer hover:bg-white/20"
-              style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
+              style={{ backgroundColor: 'oklch(var(--primary-500))' }}
               aria-label="Instagram"
             >
               <i className="ri-instagram-line text-white/70 text-lg"></i>
@@ -83,7 +90,7 @@ export default function ReserveCTASection() {
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer hover:bg-white/20"
-              style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
+              style={{ backgroundColor: 'oklch(var(--primary-500))' }}
               aria-label="LINE"
             >
               <i className="ri-line-line text-white/70 text-lg"></i>
@@ -93,7 +100,7 @@ export default function ReserveCTASection() {
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer hover:bg-white/20"
-              style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
+              style={{ backgroundColor: 'oklch(var(--primary-500))' }}
               aria-label="公式サイト"
             >
               <i className="ri-global-line text-white/70 text-lg"></i>

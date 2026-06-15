@@ -8,12 +8,11 @@ export default function InfoSection() {
     <section id="info" className="relative w-full py-24 md:py-32 px-8 md:px-14 lg:px-20">
       <div ref={ref} className="max-w-5xl mx-auto">
         <div className={`animate-in text-center mb-14 md:mb-20 ${isVisible ? 'visible' : ''}`}>
-          <span
-            className="text-xs tracking-[0.3em]"
-            style={{ color: 'oklch(var(--accent-500))', fontFamily: 'var(--font-body)' }}
-          >
-            / Information
-          </span>
+        <span
+                className="text-4xl md:text-4xl lg:text-5xl font-script text-accent-500"
+              >
+                Infomation
+              </span>
           <h2
             className="text-4xl md:text-5xl font-heading font-light mt-4"
             style={{ color: 'oklch(var(--foreground-950))' }}
@@ -24,14 +23,18 @@ export default function InfoSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
           {infoData.map((item, index) => (
-            <div
-              key={item.label}
-              className={`animate-in animate-in-delay-${index + 1} ${isVisible ? 'visible' : ''} rounded-lg p-6 md:p-7 text-center transition-all duration-500 hover:-translate-y-1`}
-              style={{ backgroundColor: 'oklch(var(--background-100))' }}
-            >
+           <div
+           key={item.label}
+           className={`animate-in animate-in-delay-${index + 1} ${isVisible ? 'visible' : ''} rounded-lg p-6 md:p-7 text-center transition-all duration-500 hover:-translate-y-1`}
+           style={{
+             backgroundColor: 'oklch(var(--background-50))',
+             boxShadow:
+               '0 0 0 0.5px oklch(var(--accent-50) / 0.4), 0 4px 24px oklch(var(--accent-500) / 0.12), 0 8px 32px oklch(var(--accent-400) / 0.08)',
+           }}
+         >
               <div
                 className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-5 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: 'oklch(var(--accent-100))' }}
+                style={{ backgroundColor: 'oklch(var(--background-50))' }}
               >
                 <i
                   className={`${item.icon} text-xl md:text-2xl`}

@@ -8,7 +8,7 @@ export default function FooterSection() {
 
   return (
     <footer className="relative w-full pt-20 md:pt-24 pb-10 px-8 md:px-14 lg:px-20"
-      style={{ backgroundColor: 'oklch(var(--foreground-950))' }}
+      style={{ backgroundColor: 'oklch(var(--foreground-600))' }}
     >
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-14 mb-16 md:mb-20">
@@ -19,7 +19,7 @@ export default function FooterSection() {
             >
               FOLLOW US
             </h4>
-            <div className="w-6 h-px mb-4" style={{ backgroundColor: 'oklch(var(--primary-500))' }}></div>
+            <div className="w-6 h-px mb-4" style={{ backgroundColor: 'oklch(var(--accent-500))' }}></div>
             <div className="flex flex-col gap-3">
               <a
                 href="https://www.instagram.com/grande_nature_tokyo/"
@@ -55,7 +55,7 @@ export default function FooterSection() {
                 <div className="w-4 h-4 flex items-center justify-center">
                   <i className="ri-global-line"></i>
                 </div>
-                公式サイト
+                ウェブサイト
               </a>
             </div>
           </div>
@@ -69,52 +69,11 @@ export default function FooterSection() {
               Grande NATURE
             </h3>
             <div className="flex items-center gap-3">
-              <div className="w-8 h-px" style={{ backgroundColor: 'oklch(var(--primary-500))' }}></div>
+              <div className="w-8 h-px" style={{ backgroundColor: 'oklch(var(--accent-500))' }}></div>
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-6">
-            <div className="flex items-center gap-4">
-              <a
-                href="https://www.instagram.com/grande_nature_tokyo/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer"
-                style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
-                aria-label="Instagram"
-              >
-                <i className="ri-instagram-line text-white/60 text-sm hover:text-white/90"></i>
-              </a>
-              <a
-                href="https://lin.ee/v31VkKI"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer"
-                style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
-                aria-label="LINE"
-              >
-                <i className="ri-line-line text-white/60 text-sm hover:text-white/90"></i>
-              </a>
-              <a
-                href="https://www.g-nature.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer"
-                style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
-                aria-label="公式サイト"
-              >
-                <i className="ri-global-line text-white/60 text-sm hover:text-white/90"></i>
-              </a>
-              <a
-                href="https://reservia.jp/shop/2265e2f52e"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer"
-                style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
-                aria-label="予約サイト"
-              >
-                <i className="ri-calendar-check-line text-white/60 text-sm hover:text-white/90"></i>
-              </a>
-            </div>
+           
             <p
               className="text-xs text-white/30"
               style={{ fontFamily: 'var(--font-body)' }}

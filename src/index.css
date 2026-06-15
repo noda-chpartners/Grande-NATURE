@@ -5,7 +5,8 @@
 :root {
   --font-heading: 'Cormorant Garamond', 'Shippori Mincho', serif;
   --font-body: 'Noto Sans JP', sans-serif;
-  --font-label: 'Noto Sans JP', sans-serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-label: 'Great Vibes', cursive;
   
   /* Background - white scale */
   --background-50: 1 0 0;
@@ -39,7 +40,7 @@
   --accent-200: 0.86 0.07 0;
   --accent-300: 0.78 0.11 0;
   --accent-400: 0.68 0.16 0;
-  --accent-500: 0.58 0.22 0;
+  --accent-500: 0.58 0.20 0;
   --accent-600: 0.52 0.20 0;
   --accent-700: 0.45 0.17 0;
   --accent-800: 0.37 0.14 0;
@@ -59,18 +60,20 @@
   --secondary-900: 0.23 0.017 75;
   --secondary-950: 0.13 0.008 75;
 
-  /* Foreground - dark #1f1c15 */
-  --foreground-50: 0.95 0.006 82;
-  --foreground-100: 0.88 0.007 82;
-  --foreground-200: 0.78 0.008 82;
-  --foreground-300: 0.65 0.009 82;
-  --foreground-400: 0.50 0.01 82;
-  --foreground-500: 0.40 0.011 82;
-  --foreground-600: 0.33 0.011 82;
-  --foreground-700: 0.27 0.011 82;
-  --foreground-800: 0.22 0.011 82.2;
-  --foreground-900: 0.19 0.011 82.2;
-  --foreground-950: 0.175 0.011 82.2;
+  /* Foreground - #1f0e01 ベース */
+  --foreground-50: 0.95 0.008 45;
+  --foreground-100: 0.88 0.012 45;
+  --foreground-200: 0.78 0.016 45;
+  --foreground-300: 0.65 0.02 45;
+  --foreground-400: 0.52 0.024 45;
+  --foreground-500: 0.42 0.028 45;
+  --foreground-600: 0.35 0.032 45;
+  --foreground-700: 0.30 0.036 45;
+  --foreground-800: 0.26 0.04 45;
+  --foreground-900: 0.22 0.042 45;
+  --foreground-950: 0.176 0.044 45;
+
+  
 }
 
 * {
