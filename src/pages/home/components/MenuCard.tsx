@@ -12,10 +12,10 @@ interface MenuCardProps {
 export default function MenuCard({ item }: MenuCardProps) {
   return (
     <div
-            className="w-full md:w-[340px] rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-1 cursor-pointer"
+      className="w-full flex flex-col md:flex-row rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-1 cursor-pointer"
       style={{ backgroundColor: 'oklch(var(--background-50))' }}
     >
-      <div className="relative w-full aspect-[4/3] overflow-hidden">
+      <div className="relative w-full md:w-2/5 lg:w-2/5 aspect-[4/3] md:aspect-auto overflow-hidden shrink-0">
         <img
           src={item.image}
           alt={item.name}
@@ -36,7 +36,7 @@ export default function MenuCard({ item }: MenuCardProps) {
           </span>
         </div>
       </div>
-      <div className="p-5">
+      <div className="p-5 md:p-7 flex-1 flex flex-col justify-center">
         <h3
           className="text-base md:text-lg font-medium mb-1 leading-snug"
           style={{ color: 'oklch(var(--foreground-950))', fontFamily: 'var(--font-body)' }}
