@@ -25,7 +25,7 @@ export default function HeroSection() {
           title="自由が丘のエステ グランナチュール Grande NATURE"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-background-100/20 to-accent-100/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-accent-100/30"></div>
 
       <div
         ref={ref}

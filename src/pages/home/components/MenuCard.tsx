@@ -1,5 +1,6 @@
 interface MenuCardProps {
   item: {
+    id: number;
     name: string;
     description: string;
     duration: string;
@@ -8,6 +9,7 @@ interface MenuCardProps {
     image: string;
   };
 }
+
 
 export default function MenuCard({ item }: MenuCardProps) {
   return (
@@ -37,10 +39,14 @@ export default function MenuCard({ item }: MenuCardProps) {
         </div>
       </div>
       <div className="p-5 md:p-7 flex-1 flex flex-col justify-center">
-        <h3
-          className="text-base md:text-lg font-medium mb-1 leading-snug"
-          style={{ color: 'oklch(var(--foreground-950))', fontFamily: 'var(--font-body)' }}
-        >
+      <h3
+  className="text-base md:text-lg font-medium mb-1 leading-snug"
+  style={{
+    color: 'oklch(var(--foreground-950))',
+    fontFamily: 'var(--font-body)',
+    textShadow: '0 0 10px rgb(255, 244, 223), 0 0 20px rgb(255, 244, 223)',
+  }}
+>
           {item.name}
         </h3>
         <p
