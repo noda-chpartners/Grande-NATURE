@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import about from '@/assets/about.jpg';
+import about from '@/assets/about11.jpg';
 import ink2 from '@/assets/ink2.png';
 
 export default function AboutSection() {

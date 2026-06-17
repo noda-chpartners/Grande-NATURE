@@ -1,5 +1,5 @@
 import menu1 from '@/assets/menu11.png';
-import menu2 from '@/assets/menu22.png';
+import menu2 from '@/assets/menu2.jpg';
 import menu3 from '@/assets/menu3.jpg';
 import menu4 from '@/assets/menu4.jpg';
 import menu5 from '@/assets/hero.jpg';
