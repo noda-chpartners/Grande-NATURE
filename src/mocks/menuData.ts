@@ -1,5 +1,5 @@
-import menu1 from '@/assets/menu1.jpg';
-import menu2 from '@/assets/menu2.jpg';
+import menu1 from '@/assets/menu11.png';
+import menu2 from '@/assets/menu22.png';
 import menu3 from '@/assets/menu3.jpg';
 import menu4 from '@/assets/menu4.jpg';
 import menu5 from '@/assets/hero.jpg';
@@ -71,7 +71,7 @@ export const infoData = [
   {
     icon: 'ri-phone-line',
     label: 'TEL',
-    value: '090-1994-8142',
+    value: '03-6421-3344',
     note: 'お気軽にお問合せください',
   },
   {

@@ -86,28 +86,53 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Hamburger button */}
-        <button
+                {/* Hamburger button */}
+                <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden w-10 h-10 flex items-center justify-center cursor-pointer z-[101] relative"
           aria-label={menuOpen ? 'メニューを閉じる' : 'メニューを開く'}
         >
-          <div className="w-6 h-5 relative flex flex-col justify-between">
+          <div className="relative w-6 h-6">
             <span
-              className={`block h-px w-full transition-all duration-300 origin-center ${menuOpen ? 'rotate-45 translate-y-[9px]' : ''
-                }`}
-              style={{ backgroundColor: menuOpen ? 'oklch(var(--foreground-950))' : (scrolled ? 'oklch(var(--foreground-950))' : '#ffffff') }}
-            ></span>
+              className={`absolute left-0 w-full h-px transition-all duration-300 origin-center ${
+                menuOpen
+                  ? 'top-1/2 -translate-y-1/2 rotate-45'
+                  : 'top-1'
+              }`}
+              style={{
+                backgroundColor: menuOpen
+                  ? 'oklch(var(--foreground-950))'
+                  : scrolled
+                    ? 'oklch(var(--foreground-950))'
+                    : '#ffffff',
+              }}
+            />
             <span
-              className={`block h-px w-full transition-all duration-300 ${menuOpen ? 'opacity-0 scale-x-0' : ''
-                }`}
-              style={{ backgroundColor: menuOpen ? 'oklch(var(--foreground-950))' : (scrolled ? 'oklch(var(--foreground-950))' : '#ffffff') }}
-            ></span>
+              className={`absolute left-0 top-1/2 w-full h-px -translate-y-1/2 transition-all duration-300 ${
+                menuOpen ? 'opacity-0 scale-x-0' : ''
+              }`}
+              style={{
+                backgroundColor: menuOpen
+                  ? 'oklch(var(--foreground-950))'
+                  : scrolled
+                    ? 'oklch(var(--foreground-950))'
+                    : '#ffffff',
+              }}
+            />
             <span
-              className={`block h-px w-full transition-all duration-300 origin-center ${menuOpen ? '-rotate-45 -translate-y-[9px]' : ''
-                }`}
-              style={{ backgroundColor: menuOpen ? 'oklch(var(--foreground-950))' : (scrolled ? 'oklch(var(--foreground-950))' : '#ffffff') }}
-            ></span>
+              className={`absolute left-0 w-full h-px transition-all duration-300 origin-center ${
+                menuOpen
+                  ? 'top-1/2 -translate-y-1/2 -rotate-45'
+                  : 'bottom-1'
+              }`}
+              style={{
+                backgroundColor: menuOpen
+                  ? 'oklch(var(--foreground-950))'
+                  : scrolled
+                    ? 'oklch(var(--foreground-950))'
+                    : '#ffffff',
+              }}
+            />
           </div>
         </button>
       </div>

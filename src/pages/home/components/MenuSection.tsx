@@ -35,6 +35,7 @@ export default function MenuSection() {
             <h2
               className="text-4xl md:text-5xl font-heading font-light "
               style={{ color: 'oklch(var(--foreground-950))' }}
+              
             >
               人気メニュー
             </h2>

@@ -25,7 +25,7 @@ export default function HeroSection() {
           title="自由が丘のエステ グランナチュール Grande NATURE"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-background-100/20 to-accent-100/20"></div>
 
       <div
         ref={ref}
@@ -44,7 +44,7 @@ export default function HeroSection() {
             className="text-3xl md:text-5xl lg:text-7xl font-heading font-light tracking-wide text-white mb-4 md:mb-6"
             style={{
               textShadow:
-                '0 0 30px oklch(var(--accent-500) / 0.55), 0 0 60px oklch(var(--accent-400) / 0.35), 0 2px 12px rgba(0, 0, 0, 0.45)',
+                '0 0 30px oklch(var(--accent-500) / 0.9), 0 0 60px oklch(var(--accent-400) / 0.5), 0 2px 12px ',
             }}
           >
             グランナチュール
@@ -52,7 +52,7 @@ export default function HeroSection() {
         </div>
         <div className={`animate-in animate-in-delay-2 ${isVisible ? 'visible' : ''}`}>
           <p
-            className="text-xs md:text-lg lg:text-xl font-light text-white/80 tracking-wider mb-10 md:mb-12"
+            className="text-xs md:text-lg lg:text-xl font-light text-white/90 tracking-wider mb-10 md:mb-12"
             style={{ fontFamily: 'var(--font-body)' }}
           >
             自由が丘で30年続く本物のリンパマッサージ<br />完全個室型エステサロン
@@ -67,6 +67,7 @@ export default function HeroSection() {
           <i className="ri-arrow-down-s-line text-white/50 text-2xl"></i>
         </div>
       </div>
+      
     </section>
   );
 }

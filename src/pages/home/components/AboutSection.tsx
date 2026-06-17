@@ -26,27 +26,37 @@ export default function AboutSection() {
                 About us
               </span>
               <h2
-                className="text-4xl md:text-4xl lg:text-5xl font-heading font-light mb-10 leading-tight"
-                style={{ color: 'oklch(var(--foreground-950))' }}
-              >
+  className="text-4xl md:text-4xl lg:text-5xl font-heading font-light mb-10 leading-tight"
+  style={{
+    color: 'oklch(var(--foreground-950))',
+    textShadow: '0 0 10px rgb(255, 244, 223)',
+  }}
+>
                 私たちについて
 
               </h2>
             </div>
             <div className={`animate-in animate-in-delay-1 ${isVisible ? 'visible' : ''}`}>
-              <h2
-                className="text-2xl md:text-2xl lg:text-3xl font-heading font-light mt-6 mb-5 leading-tight"
-                style={{ color: 'oklch(var(--foreground-950))' }}
-              >
+            <h2
+  className="text-2xl md:text-2xl lg:text-3xl font-heading font-light mt-6 mb-5 leading-tight"
+  style={{
+    color: 'oklch(var(--foreground-950))',
+    textShadow: '0 0 10px rgb(255, 244, 223)',
+  }}
+>
                 人と地球との調和
 
               </h2>
             </div>
             <div className={`animate-in animate-in-delay-2 ${isVisible ? 'visible' : ''}`}>
-              <p
-                className="text-sm md:text-base leading-loose"
-                style={{ color: 'oklch(var(--foreground-700))', fontFamily: 'var(--font-body)' }}
-              >
+            <p
+  className="text-sm md:text-base leading-loose"
+  style={{
+    color: 'oklch(var(--foreground-700))',
+    fontFamily: 'var(--font-body)',
+    textShadow: '0 0 10px rgb(255, 244, 223)',
+  }}
+>
                 1995年のオープン以来、グランナチュールは「人と地球との調和」を大切に、お客様一人ひとりに寄り添った施術をご提供してまいりました。
                 独自の「ナチュール リンパドレナージュ」によるオールハンドのトリートメントで、心と身体の巡りを整え、本来の美しさを引き出します。
                 日々の忙しさを忘れ、自分自身をいたわる特別なひとときをお過ごしください。皆様のご来店を心よりお待ちしております。

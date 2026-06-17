@@ -58,7 +58,7 @@ export default function AccessSection() {
                   className="text-sm hover:opacity-70 transition-opacity"
                   style={{ color: 'oklch(var(--foreground-600))', fontFamily: 'var(--font-body)' }}
                 >
-                  090-1994-8142
+                  03-6421-3344
                 </a>
               </div>
             </div>
