@@ -33,7 +33,7 @@ export default function AccessSection() {
               >
                  東京都世田谷区
                 <br />
-                奥沢３丁目１２－１
+                奥沢２丁目１２－１５
 
               </h2>
             </div>
@@ -82,7 +82,8 @@ export default function AccessSection() {
           <div className="w-full lg:w-1/2">
             <div className={`animate-in animate-in-delay-2 ${isVisible ? 'visible' : ''} rounded-lg overflow-hidden`}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8!2d139.6687!3d35.6068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDM2JzI0LjUiTiAxMznCsDQwJzA3LjMiRQ!5e0!3m2!1sja!2sjp!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.890956633629!2d139.6719626!3d35.60575629999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f522a6743f8b%3A0x488d5b36c258b871!2z44Kw44Op44Oz44OK44OB44Ol44O844Or!5e0!3m2!1sja!2sjp!4v1789613550752!5m2!1sja!2sjp"
+               
                 width="100%"
                 height="320"
                 style={{ border: 0 }}
